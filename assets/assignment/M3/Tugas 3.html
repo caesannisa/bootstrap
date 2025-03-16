@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1> Validasi Usia </h1>
+    <h2> Masukkan nama dan usia anda! </h2>
+    <label>Nama:</label>
+    <input type="text" id="nama" placeholder="Masukkan nama anda"/><br>
+    <label>Usia:</label>
+    <input type="text" id="usia" placeholder="Masukkan usia anda"/><br>
+    <input onclick="klik()" type="button" value="Submit" class="tombol">
+    
+    <p id="isinama" style="color:rgb(148, 16, 33)"></p>
+    <p id="hasil" style="color: rgb(8, 8, 6);"></p>
+
+    <script>
+        function klik() {
+            var nama = document.getElementById("nama").value;
+            var usia = document.getElementById("usia").value;
+            if (nama == "") 
+            {
+                document.getElementById("isinama").innerHTML = "Isikan Nama Anda!";
+                return false;
+            }
+            if (usia >=0 && usia < 2) 
+            {
+                document.getElementById("hasil").innerHTML = "Anda masih bayi";
+                return false;
+            }
+            if (usia >= 3 && usia <= 6) 
+            {
+                document.getElementById("hasil").innerHTML = "Anda masih anak-anak";
+                return false;
+            }
+            if (usia >= 6 && usia <= 15) 
+            {
+                document.getElementById("hasil").innerHTML = "Anda masih remaja";
+                return false;
+            }
+            if (usia >= 16 && usia <= 25) 
+            {
+                document.getElementById("hasil").innerHTML = "Anda sudah dewasa";
+                return false;
+            }
+            if (usia >= 25 && usia <= 50) 
+            {
+                document.getElementById("hasil").innerHTML = "Anda sudah lanjut usia";
+                return false;
+            }
+            if (usia >60) 
+            {
+                document.getElementById("hasil").innerHTML = "Anda sudah tua";
+                return false;
+            }
+            if (usia <0) 
+            {
+                document.getElementById("hasil").innerHTML = "Anda belum lahir";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
