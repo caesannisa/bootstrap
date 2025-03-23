@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: red;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .container {
+            display: flex;
+            min-height: 500px;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #666;
+            text-decoration: none;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .sidebar a:hover {
+            color: red;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .footer {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>City Gallery</h1>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">Manchester</a>
+            <a href="#">Bristol</a>
+            <a href="#">Leicester</a>
+        </div>
+
+        <div class="content">
+            <h2>Manchester</h2>
+            <p>Manchester is a city and metropolitan borough of Greater Manchester, England, which had an estimated population of 568,996 in 2022.</p>
+            <p>Greater Manchester is the third-most populous metropolitan area in the United Kingdom, with a population of 2.92 million, and the largest in Northern England.</p>
+            <p>One the most important is...</p>
+            <p style="color:red;">MANCHESTER IS RED</p>
+            <img src="https://emap-romulus-prod.s3.eu-west-1.amazonaws.com/wp-content/uploads/sites/9/2024/07/old-trafford-manchester-united.jpg" alt="Manchester">
+        </div>
+    </div>
+
+    <div class="footer">
+        Copyright @AnnisaCaesaMeilani
+    </div>
+</body>
+</html>
